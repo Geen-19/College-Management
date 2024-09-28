@@ -10,7 +10,7 @@ function App() {
   const [data, setData] = useState([]);
   const getUser = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/users/2");
+      const response = await axios.get("http://localhost:8080/api/users/3");
       setRole(response.data.role);
       setData(response.data);
       console.log(role);

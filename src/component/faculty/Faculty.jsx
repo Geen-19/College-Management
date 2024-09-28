@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import FacultyUpdate from './FacultyUpdate';
 const Faculty = ({data}) => {
   const [students, setStudents] = useState([]);
 
@@ -48,6 +49,8 @@ const Faculty = ({data}) => {
                     ))}
                 </tbody>
             </table>
+
+            <FacultyUpdate data={data} />
         </div>
     );
 }
